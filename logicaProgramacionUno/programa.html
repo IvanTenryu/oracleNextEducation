@@ -138,11 +138,31 @@ JavaScript
   document.write("Pedro tiene: " + (anho-1995) + " años");
   saltarLinea();
   document.write("Carlos tiene: " + (anho-2005) + " años");
+  saltarLinea();
+  saltarLinea();
+  saltarLinea();
+  saltarLinea();
 </script>
 
 <!--
   Funciones con parámetros
 -->
 <script>
-  
+  function saltarLinea() {
+    document.write("<br><br>");
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var anho = 2020;
+  // var saltarLinea = "<br><br>";
+
+  imprimir("hola amigos");
+
+  imprimir("Juan tiene: " + (anho-2000) + " años");
+  imprimir("Pedro tiene: " + (anho-1995) + " años");
+  imprimir("Carlos tiene: " + (anho-2005) + " años");
 </script>
