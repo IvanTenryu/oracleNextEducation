@@ -1,0 +1,49 @@
+<!--
+  Pantalla de inicio de sesión
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de inicio de sesión</title>
+    <script>
+      function saltarLinea(){
+        document.write("<br><br><br>");
+      }
+      function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+      }
+      
+      var inicioDeSesionRegistrado = "alura";
+      var contrasenhaRegistrada = "alura321";
+
+      var limite = 3;
+      var intentos = 1;
+
+
+      while(intentos <= limite){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        } else {
+            if(intentos == 3) {
+              alert("Haz superado el límite de intentos, vuelve en 15 minutos!");
+            } else {
+              alert("Inicio de sesión inválido. Inténtalo otra vez!");
+            }
+        }
+        intentos++;
+      }
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
