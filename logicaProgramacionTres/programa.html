@@ -7,8 +7,47 @@
   <title>Document</title>
 </head>
 <body>
+  <canvas width="600" height="400">
+
+  </canvas>
   <script>
-    
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    /*
+    for (let i = 0; i < 6; i++) {
+      for (let j = 0; j < 6; j++) {
+        pincel.fillStyle = `rgb(
+            ${Math.floor(255 - 42.5 * i)},
+            ${Math.floor(255 - 42.5 * j)},
+            0)`;
+        pincel.fillRect(j * 25, i * 25, 25, 25);
+      }
+    }
+    */
+   
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0,0,600,400);
+
+    pincel.fillStyle = "green";
+    pincel.fillRect(0,0,200,400);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(400,0,200,400);
+
+    // crear un triángulo
+    pincel.fillStyle = "Yellow";
+    pincel.beginPath();
+    pincel.moveTo(300,200);
+    pincel.lineTo(200,400);
+    pincel.lineTo(400,400);
+    pincel.fill();
+
+    // crear una circunferencia
+    pincel.fillStyle = "blue";
+    pincel.beginPath();
+    pincel.arc(300,200,50,0,2*3.14);
+    pincel.fill();
   </script>
 </body>
 </html>
