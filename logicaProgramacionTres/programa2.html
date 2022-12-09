@@ -19,11 +19,21 @@
       pincel.strokeStyle = "black";
       pincel.strokeRect(x,y,50,50);
     }
-    
-    dibujarCuadrado(0,0,"red");
-    dibujarCuadrado(0,50,"yellow");
-    dibujarCuadrado(0,100,"green");
 
+    /*
+    var x = 0;
+    while(x < 600){
+      dibujarCuadrado(x,0,"red");
+      dibujarCuadrado(x,50,"yellow");
+      dibujarCuadrado(x,100,"green");
+    }
+    */
+    for(var x = 0; x < 600; x = x + 50){
+      dibujarCuadrado(x,0,"red");
+      dibujarCuadrado(x,50,"yellow");
+      dibujarCuadrado(x,100,"green");
+    }
+    
   </script>
 </body>
 </html>
