@@ -21,14 +21,19 @@
       pincel.fill();
     }
 
-    function limpiarPantall(){
+    function limpiarPantalla(){
       pincel.clearRect(0,0,600,400);
     }
 
-    for(var x = 20; x < 580; x++){
+    var x = 0;
+
+    function actualizarPantalla(){
+      limpiarPantalla();
       disenharCircunferencia(x,20,10);
+      x++;
     }
 
+    setInterval(actualizarPantalla,50);
 
   </script>
 </body>
