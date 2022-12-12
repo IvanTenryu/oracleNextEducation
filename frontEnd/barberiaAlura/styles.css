@@ -1,9 +1,10 @@
-body {
-  background: #ccc;
-}
-
 #banner {
   width: 100%;
+}
+
+.nosotros {
+  background: #ccc;
+  padding: 20px;
 }
 
 h1 {
@@ -24,4 +25,29 @@ p {
 
 em strong {
   color: #f00;
+}
+
+.diferenciadores {
+  background: #fff;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul{
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 15%;
+}
+
+.items {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.diferenciador {
+  width: 50%;
 }
