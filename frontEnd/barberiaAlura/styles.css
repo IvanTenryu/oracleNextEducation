@@ -1,3 +1,7 @@
+.titulo-principal {
+  padding-left: 30px;
+}
+
 #banner {
   width: 100%;
 }
@@ -7,12 +11,8 @@
   padding: 20px;
 }
 
-h1 {
+.titulo-central {
   text-align: center;
-  height: 150px;
-  border: 5px solid #000;
-  padding: 20px;
-  margin: 40px;
 }
 
 p {
@@ -30,10 +30,6 @@ em strong {
 .diferenciadores {
   background: #fff;
   padding: 20px;
-}
-
-h2 {
-  text-align: center;
 }
 
 ul{
